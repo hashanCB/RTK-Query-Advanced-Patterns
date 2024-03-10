@@ -28,10 +28,7 @@ export const ApiServer = createApi({
         method: "GET",
       }),
 
-      providesTags: (result, error, arg) => {
-        console.log("Fetching user with ID:");
-        return [{ type: "user", id: arg }];
-      },
+      providesTags: (result, err, arg) => [{ type: "user", id: arg }],
     }),
 
     addPost: builder.mutation({

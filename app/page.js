@@ -18,7 +18,7 @@ export default function Home() {
     data: data2,
     error: error2,
     isLoading: isLoading2,
-  } = useGetuseridQuery("ccf567ab-1161-4692-b728-988495993da1");
+  } = useGetuseridQuery(3);
   //console.log(data);
   return (
     <>
@@ -84,9 +84,9 @@ export default function Home() {
           <button
             onClick={() =>
               updateuser({
-                id: "6132440d-9937-4faa-8054-4223e93496a9",
-                name: "dddddd",
-                email: "update@hashan.com",
+                id: "ccf567ab-1161-4692-b728-988495993da1",
+                name: "new",
+                email: "new@hashan.com",
               })
             }
           >
